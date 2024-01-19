@@ -1,0 +1,378 @@
+﻿body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/neutal.jpg);
+    background-size: cover;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+}
+
+#hero {
+    position: relative;
+    z-index: 1;
+}
+
+    #hero:before {
+        content: "";
+        background: rgba(60, 65, 51, 0.4);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #hero .hero-container {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero h1 {
+        margin: 0 0 10px 0;
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    #hero .btn-get-started {
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 8px 28px;
+        border-radius: 50px;
+        margin: 10px;
+        border: 2px solid #E98B44;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+        #hero .btn-get-started:hover {
+            background: #E98B44;
+        }
+
+#box {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.text {
+    position: relative;
+    padding: 8px;
+    transition: 0.2s;
+}
+
+    .text::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: #E98B44;
+    }
+
+/*FOR IMG*/
+#cube {
+    position: relative;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+    #cube:hover {
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.2, 1.25);
+    }
+
+
+.gallery img {
+    border-radius: 60px;
+    width: 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+
+.gallery {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+    .gallery #cube .copy {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        right: 20px;
+        z-index: 15;
+        font-size: 16px;
+        padding:0 0 20px 20px;
+    }
+
+        .gallery #cube .copy h2 {
+            color: #fff;
+            font-size: 35px;
+            -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+#cube img {
+    width: 400px;
+    height: 275px;
+}
+/*END*/
+
+/*FOR HEADER*/
+#hover:hover {
+    color: #E98B44;
+}
+
+
+#navbarDropdown {
+    color: black;
+}
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Pacific', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-bottom: 4px solid #E98B44;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color: #E98B44;
+}
+
+#length {
+    background-color: #D6CFC7;
+    height: 60px;
+}
+
+#hover {
+    color: black;
+}
+
+/*SLIDER*/
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+
+    .carousel-item::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(60, 65, 51, 0.4);
+        opacity: 0.7;
+    }
+
+.carousel-caption {
+    bottom: 180px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+    .carousel-caption h5 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .carousel-caption p {
+        font-size: 35px;
+        top: 2rem;
+    }
+/*FOR VIDEO*/
+
+.back-video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-asspecct-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-asspecct-ratio: 16/9) {
+        .back-video {
+            width: auto;
+            height: 100px;
+        }
+    }
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+/*Review*/
+.Review {
+    padding: 40px 0;
+    background: none;
+    color: black;
+    text-align: center;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col1 {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+    .Review img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #E98B44;
+    margin-bottom: 20px;
+}
+
+/*form desserts content home page*/
+.Dessert {
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: black;
+    text-align: center;
+}
+
+.innerDesset {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.Dessert {
+    background:none;
+    padding: 30px;
+}
+
+/*Review Form*/
+
+#overlay {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #E98B44;
+}
+
+    input[type="text"]:focus, textarea:focus {
+        border-bottom: 1px solid #E98B44;
+    }
+
+    textarea::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+        background-color: #E98B44;
+    }
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: #E98B44;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px
+}
+
+
+/*FOR HEADER*/

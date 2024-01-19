@@ -1,0 +1,276 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B22F12BD-AFAA-4D14-9824-24EAA09B101B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebDesining_Project_Group_5</RootNamespace>
+    <AssemblyName>WebDesining Project Group 5</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\About us.css" />
+    <Content Include="css\contactUscss.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="HomePage.html" />
+    <Content Include="image\Bihar\10Tilkut.jpg" />
+    <Content Include="image\Bihar\12Custard.jpg" />
+    <Content Include="image\Bihar\2Khaja.jpg" />
+    <Content Include="image\Bihar\3Malpua.jpg" />
+    <Content Include="image\Bihar\5Parwal-ki-Mithai.jpg" />
+    <Content Include="image\Bihar\6Pedakiya.jpg" />
+    <Content Include="image\Bihar\8Anarsa.jpg" />
+    <Content Include="image\Bihar\9sewai.jpg" />
+    <Content Include="image\CakesImage\10OreoCake.jpg" />
+    <Content Include="image\CakesImage\13BlueberryCake.jpg" />
+    <Content Include="image\CakesImage\14ChocoLavaCake.jpg" />
+    <Content Include="image\CakesImage\17caramelCake.jpg" />
+    <Content Include="image\CakesImage\3CraneBerrryCake.jpg" />
+    <Content Include="image\CakesImage\4MudCake.jpg" />
+    <Content Include="image\CakesImage\5StrawberryCupeCake.png" />
+    <Content Include="image\CakesImage\7ButterscotchCake.jpg" />
+    <Content Include="image\CakesImage\9ChocolateCake.jpg" />
+    <Content Include="image\CakesImage\white-forest-cake.jpeg" />
+    <Content Include="image\contact.png" />
+    <Content Include="image\cut.png" />
+    <Content Include="image\icecreamshake\11VanillaIceCream.jpg" />
+    <Content Include="image\icecreamshake\11vanillashake.jpg" />
+    <Content Include="image\icecreamshake\12BlueberryIcecream.jpg" />
+    <Content Include="image\icecreamshake\12kesarshake.jpg" />
+    <Content Include="image\icecreamshake\18CottonCandyIcecream.jpg" />
+    <Content Include="image\icecreamshake\1chocolateShake.jpg" />
+    <Content Include="image\icecreamshake\22LemonIcecream.jpg" />
+    <Content Include="image\icecreamshake\6ButterScotchIceCream.jpg" />
+    <Content Include="image\icecreamshake\6Chocoicecream.jpg" />
+    <Content Include="image\icecreamshake\7oreomilkshake.jpg" />
+    <Content Include="image\icecreamshake\8bananashake.jpg" />
+    <Content Include="image\icecreamshake\9mangoshake.jpg" />
+    <Content Include="image\Indian\10mooti chur ka laddoo.jpg" />
+    <Content Include="image\Indian\11rasgulla.jpg" />
+    <Content Include="image\Indian\12kheer.jpg" />
+    <Content Include="image\Indian\13Rasmalai.jpg" />
+    <Content Include="image\Indian\14Peda.jpg" />
+    <Content Include="image\Indian\15besan ka laddu.jpg" />
+    <Content Include="image\Indian\16aam-ka-murabba.jpg" />
+    <Content Include="image\Indian\17modak.jpg" />
+    <Content Include="image\Indian\18sujji ka halwa.jpg" />
+    <Content Include="image\Indian\19lassi.jpg" />
+    <Content Include="image\Indian\1Gulab jamun.jpg" />
+    <Content Include="image\Indian\20bundi laddu.jpg" />
+    <Content Include="image\Indian\21 strawberry lassi.jpg" />
+    <Content Include="image\Indian\22Sandesh.jpg" />
+    <Content Include="image\Indian\2gajar ka halwa.jpg" />
+    <Content Include="image\Indian\3rabri-rabdi.jpg" />
+    <Content Include="image\Indian\4kaju katli.jpg" />
+    <Content Include="image\Indian\7kalakand.jpg" />
+    <Content Include="image\Indian\8besan ka halwa.jpg" />
+    <Content Include="image\Indian\9soan papdi.jpg" />
+    <Content Include="image\Indian\Kulfi.jpg" />
+    <Content Include="image\Indian\Sahi tukda.jpg" />
+    <Content Include="image\line.png" />
+    <Content Include="image\neutal.jpg" />
+    <Content Include="image\Other\19ChocolateGolgappa.jpg" />
+    <Content Include="image\Other\1ChocoChiCookies.jpg" />
+    <Content Include="image\Other\20BlueberryWaffles.jpg" />
+    <Content Include="image\Other\2RedVelvetCookies.jpg" />
+    <Content Include="image\Other\6Brownie.jpg" />
+    <Content Include="image\Other\8Waffles.jpg" />
+    <Content Include="image\slide %282%29.jpg" />
+    <Content Include="image\slide.jpg" />
+    <Content Include="image\user.png" />
+    <Content Include="js\ContactUs.js" />
+    <Content Include="js\main.js" />
+    <Content Include="Pages\About us.html" />
+    <Content Include="Pages\Cakes.html" />
+    <Content Include="Pages\Contact Us.html" />
+    <Content Include="Pages\Famous Desserts Of Bihar.html" />
+    <Content Include="Pages\IceCreamShake.html" />
+    <Content Include="Pages\Indian Dessert.html" />
+    <Content Include="Pages\Other Desserts.html" />
+    <Content Include="Pages\review.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\10tilkut.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\11jalebi.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\12custard.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\1thekua.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\2khaja.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\3malpua.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\4balushahi1.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\5parwal ki mitai.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\6pudukiya.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\7kala jamun1.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\8Annarsa.html" />
+    <Content Include="Recipes\Bihar Famous Dessert\9sewai.html" />
+    <Content Include="Recipes\Cakes\blackforest.html" />
+    <Content Include="Recipes\Cakes\blueberrycake.html" />
+    <Content Include="Recipes\Cakes\butterscotch.html" />
+    <Content Include="Recipes\Cakes\caramelcake.html" />
+    <Content Include="Recipes\Cakes\Chocolate Cake.html" />
+    <Content Include="Recipes\Cakes\chocolavacake.html" />
+    <Content Include="Recipes\Cakes\chocomudcake.html" />
+    <Content Include="Recipes\Cakes\cranberry.html" />
+    <Content Include="Recipes\Cakes\straberrycupcake.html" />
+    <Content Include="Recipes\Icecreams And Shakes\14bananaMilkShake.html" />
+    <Content Include="Recipes\Icecreams And Shakes\15mangoshake.html" />
+    <Content Include="Recipes\Icecreams And Shakes\16chocolate milk shake.html" />
+    <Content Include="Recipes\Icecreams And Shakes\17vanillaMilkShake.html" />
+    <Content Include="Recipes\Icecreams And Shakes\19kesarshake.html" />
+    <Content Include="Recipes\Icecreams And Shakes\1oreo milk shake.html" />
+    <Content Include="Recipes\Icecreams And Shakes\1vanillaicecream.html" />
+    <Content Include="Recipes\Icecreams And Shakes\2lemonicecream.html" />
+    <Content Include="Recipes\Icecreams And Shakes\3cottencandy.html" />
+    <Content Include="Recipes\Icecreams And Shakes\4butterscothicecream.html" />
+    <Content Include="Recipes\Icecreams And Shakes\5blueberryicecream.html" />
+    <Content Include="Recipes\Icecreams And Shakes\Chocolate Icecream.html" />
+    <Content Include="Recipes\IndianDessert\10moti chur ka laddu.html" />
+    <Content Include="Recipes\IndianDessert\11rasgulla.html" />
+    <Content Include="Recipes\IndianDessert\12kheer.html" />
+    <Content Include="Recipes\IndianDessert\13rasmalai.html" />
+    <Content Include="Recipes\IndianDessert\14peda.html" />
+    <Content Include="Recipes\IndianDessert\15besan ka laddu.html" />
+    <Content Include="Recipes\IndianDessert\16aam ka murabba.html" />
+    <Content Include="Recipes\IndianDessert\17modak.html" />
+    <Content Include="Recipes\IndianDessert\18suji ka halwa.html" />
+    <Content Include="Recipes\IndianDessert\19lassi.html" />
+    <Content Include="Recipes\IndianDessert\1gulabjamun.html" />
+    <Content Include="Recipes\IndianDessert\20bundi ka laddu.html" />
+    <Content Include="Recipes\IndianDessert\22Sandesh.html" />
+    <Content Include="Recipes\IndianDessert\2gajar ka halwa.html" />
+    <Content Include="Recipes\IndianDessert\3rabri.html" />
+    <Content Include="Recipes\IndianDessert\4kaju katli.html" />
+    <Content Include="Recipes\IndianDessert\5shahi tukda.html" />
+    <Content Include="Recipes\IndianDessert\6kulfi.html" />
+    <Content Include="Recipes\IndianDessert\7kalakand.html" />
+    <Content Include="Recipes\IndianDessert\8besan ka halwa.html" />
+    <Content Include="Recipes\IndianDessert\9sonpapdi.html" />
+    <Content Include="Recipes\Other Desserts\bluewaffle.html" />
+    <Content Include="Recipes\Other Desserts\brownie.html" />
+    <Content Include="Recipes\Other Desserts\chococookies.html" />
+    <Content Include="Recipes\Other Desserts\chocogolgappa.html" />
+    <Content Include="Recipes\Other Desserts\redvelvetcookies.html" />
+    <Content Include="Recipes\Other Desserts\waffle.html" />
+    <Content Include="video\about us.webm" />
+    <Content Include="video\video.mp4" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\Bihar\11jalebi.webp" />
+    <Content Include="image\Bihar\1Thekua.webp" />
+    <Content Include="image\Bihar\4Balusahi.webp" />
+    <Content Include="image\Bihar\7KalaJamun.webp" />
+    <Content Include="image\CakesImage\8BlackForestCake.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63228</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63228/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
